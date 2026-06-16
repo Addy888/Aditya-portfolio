@@ -1,9 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import Image from "next/image"
 
 const roles = [
   "AI & Machine Learning Engineer",
@@ -140,7 +138,7 @@ export function Hero() {
               className="text-muted-foreground hover:text-primary transition-colors p-2 hover:bg-secondary rounded-lg"
               aria-label="GitHub"
             >
-              <Github size={24} />
+              GitHub
             </a>
             <a
               href="https://linkedin.com/in/aditya-shastri-77b662245/"
@@ -149,28 +147,18 @@ export function Hero() {
               className="text-muted-foreground hover:text-primary transition-colors p-2 hover:bg-secondary rounded-lg"
               aria-label="LinkedIn"
             >
-              <Linkedin size={24} />
+              LinkedIn
             </a>
             <a
               href="mailto:adityashastri76@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors p-2 hover:bg-secondary rounded-lg"
               aria-label="Email"
             >
-              <Mail size={24} />
+              Email
             </a>
           </div>
 
-          {/* Hero Illustration */}
-          <div className="mt-16 w-full max-w-4xl mx-auto animate-slide-up" style={{ animationDelay: "0.6s" }}>
-            <Image
-              src="/hero-bg.png"
-              alt="AI & Machine Learning Engineer"
-              width={1920}
-              height={1080}
-              className="w-full h-auto object-cover rounded-xl shadow-2xl border border-white/10"
-              priority
-            />
-          </div>
+
         </div>
 
         {/* Scroll indicator */}
@@ -180,7 +168,7 @@ export function Hero() {
             className="text-muted-foreground hover:text-primary transition-colors"
             aria-label="Scroll down"
           >
-            <ArrowDown size={24} />
+            Scroll Down
           </a>
         </div>
       </div>

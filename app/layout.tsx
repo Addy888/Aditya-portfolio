@@ -17,25 +17,7 @@ export const metadata: Metadata = {
     description: 'AI & Machine Learning Engineer specializing in Deep Learning, NLP, Computer Vision, and GenAI.',
     type: 'website',
   },
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
-  },
-    generator: 'v0.app'
-}
+};
 
 export default function RootLayout({
   children,

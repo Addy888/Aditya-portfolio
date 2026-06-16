@@ -1,6 +1,5 @@
 "use client"
 
-import { Github, Linkedin, Mail, Heart } from "lucide-react"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -32,7 +31,7 @@ export function Footer() {
                 className="text-muted-foreground hover:text-primary transition-colors p-2 hover:bg-secondary rounded-lg"
                 aria-label="GitHub"
               >
-                <Github size={20} />
+                
               </a>
               <a
                 href="https://linkedin.com/in/aditya-shastri-77b662245/"
@@ -41,21 +40,21 @@ export function Footer() {
                 className="text-muted-foreground hover:text-primary transition-colors p-2 hover:bg-secondary rounded-lg"
                 aria-label="LinkedIn"
               >
-                <Linkedin size={20} />
+                
               </a>
               <a
                 href="mailto:adityashastri76@gmail.com"
                 className="text-muted-foreground hover:text-primary transition-colors p-2 hover:bg-secondary rounded-lg"
                 aria-label="Email"
               >
-                <Mail size={20} />
+                
               </a>
             </div>
 
             {/* Copyright */}
             <div className="text-center md:text-right">
               <p className="text-sm text-muted-foreground flex items-center gap-1 justify-center md:justify-end">
-                Made with <Heart className="w-4 h-4 text-primary fill-primary" /> in India
+                Made with  in India
               </p>
               <p className="text-xs text-muted-foreground/70 mt-1">
                 © {currentYear} Aditya Kumar Shastri. All rights reserved.

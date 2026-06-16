@@ -1,23 +1,19 @@
 "use client"
 
-import { Mail, Phone, MapPin, Github, Linkedin, Send, ArrowUpRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const contactInfo = [
   {
-    icon: Mail,
     label: "Email",
     value: "adityashastri76@gmail.com",
     href: "mailto:adityashastri76@gmail.com",
   },
   {
-    icon: Phone,
     label: "Phone",
     value: "+91 7291065509",
     href: "tel:+917291065509",
   },
   {
-    icon: MapPin,
     label: "Location",
     value: "India",
     href: null,
@@ -26,13 +22,11 @@ const contactInfo = [
 
 const socialLinks = [
   {
-    icon: Github,
     label: "GitHub",
     href: "https://github.com/Addy888/Addy888",
     username: "@Addy888",
   },
   {
-    icon: Linkedin,
     label: "LinkedIn",
     href: "https://linkedin.com/in/aditya-shastri-77b662245/",
     username: "Aditya Shastri",
@@ -70,22 +64,17 @@ export function Contact() {
               <h4 className="text-lg font-semibold text-foreground mb-4">Contact Information</h4>
               
               {contactInfo.map((item, index) => {
-                const Icon = item.icon
                 const content = (
                   <div key={index} className="glass-card rounded-xl p-5 hover:border-primary/30 transition-all duration-300 group">
                     <div className="flex items-center gap-4">
-                      <div className="p-3 bg-primary/10 rounded-lg">
-                        <Icon className="w-5 h-5 text-primary" />
-                      </div>
+                      
                       <div>
                         <p className="text-sm text-muted-foreground">{item.label}</p>
                         <p className="font-medium text-foreground group-hover:text-primary transition-colors">
                           {item.value}
                         </p>
                       </div>
-                      {item.href && (
-                        <ArrowUpRight className="w-4 h-4 text-muted-foreground ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
-                      )}
+                      
                     </div>
                   </div>
                 )
@@ -105,7 +94,6 @@ export function Contact() {
               <h4 className="text-lg font-semibold text-foreground mb-4">Social Profiles</h4>
               
               {socialLinks.map((link, index) => {
-                const Icon = link.icon
                 return (
                   <a
                     key={index}
@@ -116,16 +104,14 @@ export function Contact() {
                   >
                     <div className="glass-card rounded-xl p-5 hover:border-primary/30 transition-all duration-300 group">
                       <div className="flex items-center gap-4">
-                        <div className="p-3 bg-primary/10 rounded-lg">
-                          <Icon className="w-5 h-5 text-primary" />
-                        </div>
+                        
                         <div>
                           <p className="text-sm text-muted-foreground">{link.label}</p>
                           <p className="font-medium text-foreground group-hover:text-primary transition-colors">
                             {link.username}
                           </p>
                         </div>
-                        <ArrowUpRight className="w-4 h-4 text-muted-foreground ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
+                        
                       </div>
                     </div>
                   </a>
@@ -145,7 +131,7 @@ export function Contact() {
                     size="lg"
                     className="w-full bg-primary text-primary-foreground hover:bg-primary/90 glow-cyan"
                   >
-                    <Send className="w-4 h-4 mr-2" />
+                    
                     Send me an Email
                   </Button>
                 </a>

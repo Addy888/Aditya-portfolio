@@ -1,6 +1,5 @@
 "use client"
 
-import { Building2, Calendar, ArrowUpRight } from "lucide-react"
 
 const experiences = [
   {
@@ -71,14 +70,14 @@ export function Experience() {
                           {exp.title}
                         </h4>
                         <div className="flex items-center gap-2 text-muted-foreground mt-1">
-                          <Building2 className="w-4 h-4" />
+                          
                           <span>{exp.company}</span>
                           <span className="text-border">•</span>
                           <span>{exp.location}</span>
                         </div>
                       </div>
                       <div className="flex items-center gap-2 text-sm text-primary font-mono">
-                        <Calendar className="w-4 h-4" />
+                        
                         {exp.period}
                       </div>
                     </div>
@@ -87,7 +86,7 @@ export function Experience() {
                     <ul className="space-y-3 mb-6">
                       {exp.description.map((item, i) => (
                         <li key={i} className="flex items-start gap-3 text-muted-foreground">
-                          <ArrowUpRight className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
+                          
                           <span>{item}</span>
                         </li>
                       ))}

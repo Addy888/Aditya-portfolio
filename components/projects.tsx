@@ -1,14 +1,12 @@
 "use client"
 
 import { useState } from "react"
-import { ExternalLink, ChevronRight, Sparkles, Brain, Eye, Mic, Activity, Gamepad2, Music } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const projects = [
   {
     title: "RevvTik – AI Sales Learning Platform",
     category: "SaaS",
-    icon: Sparkles,
     techStack: ["Next.js", "React", "Tailwind CSS", "Supabase", "PostgreSQL", "OpenAI API", "Voice APIs"],
     problem: "Sales professionals lack real-time, personalized feedback during training sessions.",
     solution: "A full-stack AI-powered sales training platform providing real-time feedback through chat and voice-based AI coaching.",
@@ -24,7 +22,6 @@ const projects = [
   {
     title: "AI Tutor / Personal Learning Coach",
     category: "EdTech",
-    icon: Brain,
     techStack: ["Python", "PyTorch", "Scikit-learn", "Streamlit", "SQL/MongoDB", "GPT-based NLP"],
     problem: "Traditional learning systems don't adapt to individual learning patterns and behaviors.",
     solution: "An adaptive learning system that personalizes content based on user performance and learning behavior.",
@@ -40,7 +37,6 @@ const projects = [
   {
     title: "Traffic Sign Recognition System",
     category: "Computer Vision",
-    icon: Eye,
     techStack: ["Python", "OpenCV", "TensorFlow", "CNN"],
     problem: "Autonomous vehicles need reliable real-time traffic sign detection and classification.",
     solution: "Real-time traffic sign detection and classification system using Convolutional Neural Networks.",
@@ -55,7 +51,6 @@ const projects = [
   {
     title: "Medical Image Classification System",
     category: "Healthcare AI",
-    icon: Activity,
     techStack: ["TensorFlow", "CNN", "Python"],
     problem: "Manual medical image analysis is time-consuming and prone to human error.",
     solution: "Deep learning system for medical image classification achieving ~92% accuracy.",
@@ -70,7 +65,6 @@ const projects = [
   {
     title: "AI Voice Assistant (Advanced ARU)",
     category: "NLP",
-    icon: Mic,
     techStack: ["Python", "Speech Recognition", "NLP", "APIs"],
     problem: "Existing voice assistants lack intelligent fallback logic for complex queries.",
     solution: "A smart AI voice assistant capable of executing commands with intelligent context-aware fallback logic.",
@@ -85,7 +79,6 @@ const projects = [
   {
     title: "Cognitive Load Estimation System",
     category: "BCI",
-    icon: Brain,
     techStack: ["Python", "EEG Data", "Machine Learning", "Signal Processing"],
     problem: "Understanding cognitive load is crucial for adaptive learning and workplace safety.",
     solution: "Real-time cognitive load estimation using EEG signals and machine learning models.",
@@ -100,7 +93,6 @@ const projects = [
   {
     title: "Brain-Controlled Games (BCI)",
     category: "BCI",
-    icon: Gamepad2,
     techStack: ["Python", "BrainFlow SDK", "EEG", "ML"],
     problem: "Traditional gaming interfaces limit accessibility for users with motor impairments.",
     solution: "Brain-computer interface enabling game control using EEG signals.",
@@ -115,7 +107,6 @@ const projects = [
   {
     title: "AI Music Genre Classification",
     category: "Audio AI",
-    icon: Music,
     techStack: ["Python", "Machine Learning", "Audio Signal Processing"],
     problem: "Manual music categorization doesn't scale for large audio libraries.",
     solution: "Audio intelligence system for classifying music genres using machine learning.",
@@ -160,7 +151,6 @@ export function Projects() {
           {/* Projects grid */}
           <div className="grid md:grid-cols-2 gap-6">
             {displayedProjects.map((project, idx) => {
-              const Icon = project.icon
               return (
                 <div
                   key={project.title}
@@ -171,9 +161,7 @@ export function Projects() {
                   {/* Header */}
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center gap-3">
-                      <div className="p-3 bg-primary/10 rounded-xl">
-                        <Icon className="w-6 h-6 text-primary" />
-                      </div>
+                      
                       <span className="text-xs font-mono text-accent uppercase tracking-wider">
                         {project.category}
                       </span>
@@ -199,7 +187,7 @@ export function Projects() {
                   <ul className="space-y-2 mb-6">
                     {project.features.slice(0, 3).map((feature, i) => (
                       <li key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <ChevronRight className="w-4 h-4 text-primary flex-shrink-0" />
+                        
                         <span>{feature}</span>
                       </li>
                     ))}

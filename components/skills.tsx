@@ -1,29 +1,24 @@
 "use client"
 
-import { Code2, Brain, Wrench, Database } from "lucide-react"
 
 const skillCategories = [
   {
     title: "Programming",
-    icon: Code2,
     skills: ["Python", "SQL", "JavaScript", "C", "HTML", "CSS"],
     color: "primary",
   },
   {
     title: "AI / ML",
-    icon: Brain,
     skills: ["Machine Learning", "Deep Learning", "CNN", "NLP", "LLM", "RAG", "GenAI"],
     color: "accent",
   },
   {
     title: "Frameworks & Tools",
-    icon: Wrench,
     skills: ["TensorFlow", "PyTorch", "Scikit-learn", "OpenCV", "Pandas", "NumPy"],
     color: "primary",
   },
   {
     title: "Data & DevOps",
-    icon: Database,
     skills: ["Git", "GitHub", "MongoDB", "MySQL", "Tableau", "Matplotlib", "Seaborn"],
     color: "accent",
   },
@@ -57,7 +52,6 @@ export function Skills() {
           {/* Skills grid */}
           <div className="grid md:grid-cols-2 gap-6">
             {skillCategories.map((category, idx) => {
-              const Icon = category.icon
               const colorClass = category.color === "primary" ? "text-primary bg-primary/10" : "text-accent bg-accent/10"
               const badgeClass = category.color === "primary" 
                 ? "bg-primary/10 text-primary border-primary/20 hover:bg-primary/20" 
@@ -71,7 +65,7 @@ export function Skills() {
                 >
                   <div className="flex items-center gap-4 mb-6">
                     <div className={`p-3 rounded-xl ${colorClass}`}>
-                      <Icon className="w-6 h-6" />
+                      
                     </div>
                     <h4 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
                       {category.title}

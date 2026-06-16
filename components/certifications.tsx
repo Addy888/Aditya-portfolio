@@ -1,6 +1,5 @@
 "use client"
 
-import { Award, CheckCircle } from "lucide-react"
 
 const certifications = [
   {
@@ -66,7 +65,7 @@ export function Certifications() {
               >
                 <div className="flex items-start gap-4">
                   <div className="p-2 bg-primary/10 rounded-lg flex-shrink-0">
-                    <Award className="w-5 h-5 text-primary" />
+                    
                   </div>
                   <div className="flex-1 min-w-0">
                     <h4 className="font-semibold text-foreground mb-1 group-hover:text-primary transition-colors text-sm leading-tight">
@@ -74,7 +73,7 @@ export function Certifications() {
                     </h4>
                     <p className="text-sm text-muted-foreground">{cert.issuer}</p>
                     <span className="inline-flex items-center gap-1 mt-2 text-xs text-primary">
-                      <CheckCircle className="w-3 h-3" />
+                      
                       {cert.category}
                     </span>
                   </div>

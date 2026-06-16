@@ -1,6 +1,5 @@
 "use client"
 
-import { MapPin, GraduationCap, Briefcase, Sparkles } from "lucide-react"
 
 export function About() {
   return (
@@ -61,9 +60,7 @@ export function About() {
             <div className="lg:col-span-2 space-y-4">
               <div className="glass-card rounded-xl p-6 hover:border-primary/50 transition-all duration-300">
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-primary/10 rounded-lg">
-                    <MapPin className="w-5 h-5 text-primary" />
-                  </div>
+                  
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Location</h4>
                     <p className="text-muted-foreground">India</p>
@@ -73,9 +70,7 @@ export function About() {
 
               <div className="glass-card rounded-xl p-6 hover:border-primary/50 transition-all duration-300">
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-primary/10 rounded-lg">
-                    <GraduationCap className="w-5 h-5 text-primary" />
-                  </div>
+                  
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Education</h4>
                     <p className="text-muted-foreground">B.Tech CSE (AI & ML)</p>
@@ -86,9 +81,7 @@ export function About() {
 
               <div className="glass-card rounded-xl p-6 hover:border-primary/50 transition-all duration-300">
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-primary/10 rounded-lg">
-                    <Briefcase className="w-5 h-5 text-primary" />
-                  </div>
+                  
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Focus Areas</h4>
                     <p className="text-muted-foreground">Deep Learning, NLP, GenAI</p>
@@ -98,9 +91,7 @@ export function About() {
 
               <div className="glass-card rounded-xl p-6 hover:border-primary/50 transition-all duration-300">
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-accent/10 rounded-lg">
-                    <Sparkles className="w-5 h-5 text-accent" />
-                  </div>
+                  
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Interests</h4>
                     <p className="text-muted-foreground">AI Research, SaaS, BCI Systems</p>
