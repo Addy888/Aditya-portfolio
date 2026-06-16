@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 const roles = [
   "AI & Machine Learning Engineer",
@@ -43,10 +44,11 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-16"
     >
+
       {/* Background gradient orbs */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-glow-pulse" />
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-glow-pulse" style={{ animationDelay: "1.5s" }} />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan/5 rounded-full blur-3xl" />
@@ -156,6 +158,18 @@ export function Hero() {
             >
               <Mail size={24} />
             </a>
+          </div>
+
+          {/* Hero Illustration */}
+          <div className="mt-16 w-full max-w-4xl mx-auto animate-slide-up" style={{ animationDelay: "0.6s" }}>
+            <Image
+              src="/hero-bg.png"
+              alt="AI & Machine Learning Engineer"
+              width={1920}
+              height={1080}
+              className="w-full h-auto object-cover rounded-xl shadow-2xl border border-white/10"
+              priority
+            />
           </div>
         </div>
 
